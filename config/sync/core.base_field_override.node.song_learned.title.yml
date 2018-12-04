@@ -1,0 +1,18 @@
+uuid: b1d4684c-bec0-4150-91a1-2f73202744c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.song_learned
+id: node.song_learned.title
+field_name: title
+entity_type: node
+bundle: song_learned
+label: 'Song title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

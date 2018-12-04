@@ -1,0 +1,23 @@
+uuid: 7688b896-12fa-4e78-b228-3ff8cdb76d15
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: year
+label: Year
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:name]'
+selection_criteria:
+  61bf8c36-a641-4446-ac49-558476090db0:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      year: year
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 61bf8c36-a641-4446-ac49-558476090db0
+selection_logic: and
+weight: -5
+relationships: {  }

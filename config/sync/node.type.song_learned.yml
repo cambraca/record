@@ -1,0 +1,11 @@
+uuid: d5fc9d0b-e11a-447f-876f-cc8c1032a8be
+langcode: en
+status: true
+dependencies: {  }
+name: 'Song learned'
+type: song_learned
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

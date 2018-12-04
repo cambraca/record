@@ -1,0 +1,13 @@
+uuid: f7f98ddc-8aae-48a5-b550-6cf557b5878e
+langcode: en
+status: true
+dependencies: {  }
+id: book_cover
+label: 'Book cover'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

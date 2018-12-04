@@ -1,0 +1,22 @@
+uuid: f8a1e237-b696-4d69-800e-5bc60eaa8d2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.song_learned
+id: node.song_learned.promote
+field_name: promote
+entity_type: node
+bundle: song_learned
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,11 @@
+uuid: 773a6924-16eb-4277-86f6-401c55f9ad93
+langcode: en
+status: true
+dependencies: {  }
+name: 'Book read'
+type: book_read
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

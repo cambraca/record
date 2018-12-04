@@ -1,0 +1,70 @@
+uuid: c75c9200-2084-451f-a1b0-45357ab67b46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.song_learned.body
+    - field.field.node.song_learned.field_author
+    - field.field.node.song_learned.field_links
+    - field.field.node.song_learned.field_resources
+    - field.field.node.song_learned.field_year
+    - node.type.song_learned
+  module:
+    - link
+    - text
+    - user
+id: node.song_learned.default
+targetEntityType: node
+bundle: song_learned
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_author:
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_links:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_resources:
+    type: entity_reference_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_year:
+    weight: 5
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,17 @@
+uuid: 5bbf37cb-ece7-4474-ab46-7de7fdabfc00
+langcode: en
+status: true
+dependencies:
+  module:
+    - markdown
+name: Formatted
+format: formatted
+weight: 0
+filters:
+  markdown:
+    id: markdown
+    provider: markdown
+    status: true
+    weight: 0
+    settings:
+      markdown_library: php-markdown

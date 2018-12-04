@@ -1,0 +1,22 @@
+uuid: d444477b-0259-48ef-8f1f-d0e09d70b37b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.song_learned
+  module:
+    - text
+id: node.song_learned.body
+field_name: body
+entity_type: node
+bundle: song_learned
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
