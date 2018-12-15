@@ -1,0 +1,22 @@
+uuid: c36e242f-0b2a-43a6-ad13-bd4b8767c44d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.technology_learned
+id: node.technology_learned.promote
+field_name: promote
+entity_type: node
+bundle: technology_learned
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,21 +1,20 @@
-uuid: 6b3d50e7-7cb8-4f6b-be3c-c5689850485e
+uuid: f5b4d65b-902c-4186-abd1-d27d29a9d49a
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.book_read.body
-    - field.field.node.book_read.field_author
-    - field.field.node.book_read.field_image
-    - field.field.node.book_read.field_related_to
-    - field.field.node.book_read.field_year
-    - node.type.book_read
+    - field.field.node.tv_show_watched.body
+    - field.field.node.tv_show_watched.field_image
+    - field.field.node.tv_show_watched.field_links
+    - field.field.node.tv_show_watched.field_year
+    - node.type.tv_show_watched
   module:
     - text
     - user
-id: node.book_read.teaser
+id: node.tv_show_watched.teaser
 targetEntityType: node
-bundle: book_read
+bundle: tv_show_watched
 mode: teaser
 content:
   body:
@@ -41,6 +40,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_author: true
-  field_related_to: true
+  field_links: true
   field_year: true

@@ -1,16 +1,16 @@
-uuid: d444477b-0259-48ef-8f1f-d0e09d70b37b
+uuid: eeb66986-b0aa-4458-8322-20eeb353be21
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.song_learned
+    - node.type.tv_show_watched
   module:
     - text
-id: node.song_learned.body
+id: node.tv_show_watched.body
 field_name: body
 entity_type: node
-bundle: song_learned
+bundle: tv_show_watched
 label: Review
 description: ''
 required: false

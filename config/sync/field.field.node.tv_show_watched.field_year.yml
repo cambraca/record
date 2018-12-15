@@ -1,0 +1,29 @@
+uuid: fab9b0e0-6193-41b2-857c-0e4ac61459ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.tv_show_watched
+    - taxonomy.vocabulary.year
+id: node.tv_show_watched.field_year
+field_name: field_year
+entity_type: node
+bundle: tv_show_watched
+label: Year
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      year: year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,20 +1,18 @@
-uuid: 5b8f73bd-b077-45dd-b030-ec93387962ff
+uuid: 6dc295b8-819c-49fb-867e-18972d79ac2e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.book_read.body
-    - field.field.node.book_read.field_author
-    - field.field.node.book_read.field_image
-    - field.field.node.book_read.field_related_to
-    - field.field.node.book_read.field_year
-    - node.type.book_read
+    - field.field.node.technology_learned.body
+    - field.field.node.technology_learned.field_image
+    - field.field.node.technology_learned.field_year
+    - node.type.technology_learned
   module:
     - text
     - user
-id: node.book_read.default
+id: node.technology_learned.default
 targetEntityType: node
-bundle: book_read
+bundle: technology_learned
 mode: default
 content:
   body:
@@ -23,14 +21,6 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_author:
-    weight: 2
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_image:
     weight: 0
@@ -41,16 +31,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  field_related_to:
-    weight: 3
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_year:
-    weight: 4
+    weight: 2
     label: inline
     settings:
       link: true
@@ -58,7 +40,7 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 5
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }

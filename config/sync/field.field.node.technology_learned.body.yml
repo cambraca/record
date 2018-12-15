@@ -1,17 +1,17 @@
-uuid: d444477b-0259-48ef-8f1f-d0e09d70b37b
+uuid: 8dfbcdea-ab34-42ce-b31a-bf0b46717d06
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.song_learned
+    - node.type.technology_learned
   module:
     - text
-id: node.song_learned.body
+id: node.technology_learned.body
 field_name: body
 entity_type: node
-bundle: song_learned
-label: Review
+bundle: technology_learned
+label: Description
 description: ''
 required: false
 translatable: true

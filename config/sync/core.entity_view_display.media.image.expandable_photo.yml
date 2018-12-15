@@ -1,0 +1,30 @@
+uuid: 7bf05f8a-edcc-41f1-8617-d4997ed99ade
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.expandable_photo
+    - field.field.media.image.field_media_image
+    - image.style.medium
+    - media.type.image
+  module:
+    - image
+id: media.image.expandable_photo
+targetEntityType: media
+bundle: image
+mode: expandable_photo
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

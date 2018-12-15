@@ -1,26 +1,26 @@
-uuid: c3b00224-0808-42bd-93cf-e0120363a176
+uuid: 474ca6c9-cfce-46f5-95ee-2a442dcfc0fe
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_book_cover
-    - media.type.book_cover
+    - field.storage.node.field_image
+    - media.type.image
     - node.type.book_read
-id: node.book_read.field_book_cover
-field_name: field_book_cover
+id: node.book_read.field_image
+field_name: field_image
 entity_type: node
 bundle: book_read
 label: Cover
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      book_cover: book_cover
+      image: image
     sort:
       field: _none
     auto_create: false

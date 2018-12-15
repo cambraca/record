@@ -1,20 +1,20 @@
-uuid: 5b8f73bd-b077-45dd-b030-ec93387962ff
+uuid: fc080312-3147-4a00-9a85-9188ee2f8497
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.book_read.body
-    - field.field.node.book_read.field_author
-    - field.field.node.book_read.field_image
-    - field.field.node.book_read.field_related_to
-    - field.field.node.book_read.field_year
-    - node.type.book_read
+    - field.field.node.tv_show_watched.body
+    - field.field.node.tv_show_watched.field_image
+    - field.field.node.tv_show_watched.field_links
+    - field.field.node.tv_show_watched.field_year
+    - node.type.tv_show_watched
   module:
+    - link
     - text
     - user
-id: node.book_read.default
+id: node.tv_show_watched.default
 targetEntityType: node
-bundle: book_read
+bundle: tv_show_watched
 mode: default
 content:
   body:
@@ -24,33 +24,29 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_author:
-    weight: 2
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_image:
+    type: entity_reference_entity_view
     weight: 0
     label: hidden
     settings:
       view_mode: full
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
     region: content
-  field_related_to:
+  field_links:
     weight: 3
     label: above
     settings:
-      link: true
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: entity_reference_label
+    type: link
     region: content
   field_year:
-    weight: 4
+    weight: 2
     label: inline
     settings:
       link: true
@@ -58,7 +54,7 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }

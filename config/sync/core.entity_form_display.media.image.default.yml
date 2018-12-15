@@ -1,17 +1,17 @@
-uuid: 44de433d-9968-4a64-99d1-26cd4b90717b
+uuid: 40c1b963-1e7a-4faf-b30e-90e0ff1c1a01
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.book_cover.field_media_image
+    - field.field.media.image.field_media_image
     - image.style.thumbnail
-    - media.type.book_cover
+    - media.type.image
   module:
     - image
     - path
-id: media.book_cover.default
+id: media.image.default
 targetEntityType: media
-bundle: book_cover
+bundle: image
 mode: default
 content:
   created:

@@ -11,7 +11,7 @@ id: node.book_read.body
 field_name: body
 entity_type: node
 bundle: book_read
-label: Body
+label: Review
 description: ''
 required: false
 translatable: true

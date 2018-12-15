@@ -1,0 +1,28 @@
+uuid: 60664612-694a-4d74-927b-d96c04d737f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photos
+    - media.type.image
+    - node.type.new_experience
+id: node.new_experience.field_photos
+field_name: field_photos
+entity_type: node
+bundle: new_experience
+label: Photos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

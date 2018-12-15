@@ -1,19 +1,19 @@
-uuid: d444477b-0259-48ef-8f1f-d0e09d70b37b
+uuid: 3421b8dd-4757-4dfd-aaf1-dc9e01bb4636
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.song_learned
+    - node.type.new_experience
   module:
     - text
-id: node.song_learned.body
+id: node.new_experience.body
 field_name: body
 entity_type: node
-bundle: song_learned
-label: Review
+bundle: new_experience
+label: Description
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''

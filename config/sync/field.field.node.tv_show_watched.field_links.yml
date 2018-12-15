@@ -1,0 +1,23 @@
+uuid: 35f68e6b-9a23-410c-8414-58e4d726a514
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_links
+    - node.type.tv_show_watched
+  module:
+    - link
+id: node.tv_show_watched.field_links
+field_name: field_links
+entity_type: node
+bundle: tv_show_watched
+label: Links
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

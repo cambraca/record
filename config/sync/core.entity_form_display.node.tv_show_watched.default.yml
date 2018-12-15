@@ -1,21 +1,21 @@
-uuid: 26e30862-c7c7-495a-a7b3-eb97880439aa
+uuid: b52e0e6d-9304-446b-ae34-7262ede142e2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.book_read.body
-    - field.field.node.book_read.field_author
-    - field.field.node.book_read.field_image
-    - field.field.node.book_read.field_related_to
-    - field.field.node.book_read.field_year
-    - node.type.book_read
+    - field.field.node.tv_show_watched.body
+    - field.field.node.tv_show_watched.field_image
+    - field.field.node.tv_show_watched.field_links
+    - field.field.node.tv_show_watched.field_year
+    - node.type.tv_show_watched
   module:
+    - link
     - media_library
     - path
     - text
-id: node.book_read.default
+id: node.tv_show_watched.default
 targetEntityType: node
-bundle: book_read
+bundle: tv_show_watched
 mode: default
 content:
   body:
@@ -33,28 +33,19 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_author:
-    weight: 9
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_image:
+    type: media_library_widget
     weight: 26
     settings: {  }
     third_party_settings: {  }
-    type: media_library_widget
     region: content
-  field_related_to:
-    weight: 11
+  field_links:
+    weight: 9
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: link_default
     region: content
   field_year:
     weight: 0

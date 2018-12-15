@@ -1,19 +1,19 @@
-uuid: 052e4f69-6fde-4994-8257-405b1e3aab0f
+uuid: f287ce26-7c1f-4d14-bafc-1521d38cc700
 langcode: en
 status: true
 dependencies:
   module:
-    - media
     - node
-id: node.field_book_cover
-field_name: field_book_cover
+    - taxonomy
+id: node.field_tags
+field_name: field_tags
 entity_type: node
 type: entity_reference
 settings:
-  target_type: media
+  target_type: taxonomy_term
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,21 +1,19 @@
-uuid: 26e30862-c7c7-495a-a7b3-eb97880439aa
+uuid: 46f72156-34f3-4278-b7c5-17e379ab2c97
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.book_read.body
-    - field.field.node.book_read.field_author
-    - field.field.node.book_read.field_image
-    - field.field.node.book_read.field_related_to
-    - field.field.node.book_read.field_year
-    - node.type.book_read
+    - field.field.node.technology_learned.body
+    - field.field.node.technology_learned.field_image
+    - field.field.node.technology_learned.field_year
+    - node.type.technology_learned
   module:
     - media_library
     - path
     - text
-id: node.book_read.default
+id: node.technology_learned.default
 targetEntityType: node
-bundle: book_read
+bundle: technology_learned
 mode: default
 content:
   body:
@@ -33,28 +31,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_author:
-    weight: 9
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_image:
     weight: 26
     settings: {  }
     third_party_settings: {  }
     type: media_library_widget
-    region: content
-  field_related_to:
-    weight: 11
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
     region: content
   field_year:
     weight: 0

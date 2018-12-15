@@ -1,21 +1,19 @@
-uuid: 6b3d50e7-7cb8-4f6b-be3c-c5689850485e
+uuid: e17ffafe-11f0-47d1-8187-e76664cea1d3
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.book_read.body
-    - field.field.node.book_read.field_author
-    - field.field.node.book_read.field_image
-    - field.field.node.book_read.field_related_to
-    - field.field.node.book_read.field_year
-    - node.type.book_read
+    - field.field.node.new_experience.body
+    - field.field.node.new_experience.field_image
+    - field.field.node.new_experience.field_tags
+    - node.type.new_experience
   module:
     - text
     - user
-id: node.book_read.teaser
+id: node.new_experience.teaser
 targetEntityType: node
-bundle: book_read
+bundle: new_experience
 mode: teaser
 content:
   body:
@@ -32,8 +30,8 @@ content:
     region: content
     label: hidden
     settings:
+      link: true
       view_mode: default
-      link: false
     third_party_settings: {  }
   links:
     weight: 2
@@ -41,6 +39,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_author: true
-  field_related_to: true
-  field_year: true
+  field_tags: true

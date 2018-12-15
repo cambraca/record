@@ -1,0 +1,10 @@
+uuid: 79913d84-cffc-4d8b-bbd0-0d00af2f62e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.expandable_photo
+label: 'Expandable photo'
+targetEntityType: media
+cache: true

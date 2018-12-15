@@ -1,21 +1,19 @@
-uuid: 6b3d50e7-7cb8-4f6b-be3c-c5689850485e
+uuid: 0896e2ce-04ca-448b-b483-656d4a386269
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.book_read.body
-    - field.field.node.book_read.field_author
-    - field.field.node.book_read.field_image
-    - field.field.node.book_read.field_related_to
-    - field.field.node.book_read.field_year
-    - node.type.book_read
+    - field.field.node.technology_learned.body
+    - field.field.node.technology_learned.field_image
+    - field.field.node.technology_learned.field_year
+    - node.type.technology_learned
   module:
     - text
     - user
-id: node.book_read.teaser
+id: node.technology_learned.teaser
 targetEntityType: node
-bundle: book_read
+bundle: technology_learned
 mode: teaser
 content:
   body:
@@ -41,6 +39,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_author: true
-  field_related_to: true
   field_year: true

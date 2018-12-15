@@ -1,0 +1,28 @@
+uuid: 77ff371c-f7a2-462b-a20b-1bcc456aaff4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - media.type.image
+    - node.type.technology_learned
+id: node.technology_learned.field_image
+field_name: field_image
+entity_type: node
+bundle: technology_learned
+label: Logo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

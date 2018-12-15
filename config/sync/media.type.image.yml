@@ -1,13 +1,14 @@
-uuid: f7f98ddc-8aae-48a5-b550-6cf557b5878e
+uuid: 51f42813-873b-4a56-a80f-240107b11f3c
 langcode: en
 status: true
 dependencies: {  }
-id: book_cover
-label: 'Book cover'
+id: image
+label: Image
 description: ''
 source: image
 queue_thumbnail_downloads: false
 new_revision: false
 source_configuration:
   source_field: field_media_image
-field_map: {  }
+field_map:
+  name: name

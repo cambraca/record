@@ -1,21 +1,23 @@
-uuid: 26e30862-c7c7-495a-a7b3-eb97880439aa
+uuid: e8293943-ad33-48f5-b228-e86f771d2d07
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.book_read.body
-    - field.field.node.book_read.field_author
-    - field.field.node.book_read.field_image
-    - field.field.node.book_read.field_related_to
-    - field.field.node.book_read.field_year
-    - node.type.book_read
+    - field.field.node.new_experience.body
+    - field.field.node.new_experience.field_image
+    - field.field.node.new_experience.field_links
+    - field.field.node.new_experience.field_photos
+    - field.field.node.new_experience.field_tags
+    - field.field.node.new_experience.field_year
+    - node.type.new_experience
   module:
+    - link
     - media_library
     - path
     - text
-id: node.book_read.default
+id: node.new_experience.default
 targetEntityType: node
-bundle: book_read
+bundle: new_experience
 mode: default
 content:
   body:
@@ -33,28 +35,34 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_author:
-    weight: 9
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_image:
-    weight: 26
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: media_library_widget
     region: content
-  field_related_to:
-    weight: 11
+  field_links:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_photos:
+    type: media_library_widget
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 10
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     region: content
   field_year:
     weight: 0
